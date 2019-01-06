@@ -47,6 +47,9 @@ install:
 
 after_failure:
 - cd $TRAVIS_BUILD_DIR
+- ls -la ./web/var
+- ls -la ./web/var/assets
+- ls -la ./web/var/assets/restricted-assets
 - cat ./lib/Members/tests/_output/*
 
 script:
